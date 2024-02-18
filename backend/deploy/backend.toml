@@ -1,0 +1,23 @@
+[api]
+project_name = "Sea Battle Backend"
+
+url = "http://localhost:3001"
+
+cors_origins = ["*"]
+allow_credentials = true
+allow_methods = ["*"]
+allow_headers = ["*"]
+
+host = "localhost"
+port = 8081
+
+[telegram]
+use_polling = true
+token = "secret :^)"
+locales_dir = "./locales"
+
+[logging]
+level = "DEBUG"
+
+[database]
+dsn = "postgresql+asyncpg://superuser:superpassword@localhost:5432/superuser"
