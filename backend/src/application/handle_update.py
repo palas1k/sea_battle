@@ -13,6 +13,9 @@ class HandleUpdateDTO:
 
 
 class HandleUpdate(Usecase[HandleUpdateDTO, None]):
+    """
+     "Отлов" апдейтов от телеграм, дочерний класс от Usecase с типами Input, Output DTO
+    """
     __slots__ = ("bot", "dp")
 
     def __init__(self, bot: Bot, dp: Dispatcher):

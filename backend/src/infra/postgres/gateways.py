@@ -14,6 +14,10 @@ class SAGateway:
 
 
 class SAUserGateway(SAGateway, UserGateway):
+    """
+     Методы запросов к бд наследуемые для типизации от  Сессия и UserGateway с типизацией методов.
+     Класс реализует CRUD запросов к бд
+    """
     async def get_by_username(self, username: str):
         return (
             await self.session.execute(
